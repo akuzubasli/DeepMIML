@@ -1,4 +1,4 @@
-from __future__ import print_function
+from __future__ import print_function # brings the print function from Python 3 into Python 2.6+. Must be at 1st line.
 import cv2
 import os.path as osp
 import numpy as np
@@ -102,5 +102,5 @@ if __name__ == '__main__':
     gt_bag_labels = coco.gt_bag_labels()
     print('labels: ', [coco.classes[i] for i in range(80) if gt_bag_labels[idx, i]])
     image = coco.image_at(idx)
-    plt.imshow(image[:, :, (2, 1, 0)])
+    plt.imshow(image[:, :, (2, 1, 0)]) # cv2 imshow trick
     plt.show()

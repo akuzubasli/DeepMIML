@@ -43,7 +43,7 @@ class COCODataLayer(object):
 
     def _get_next_minibatch(self):
         """
-        Retrun:
+        Return:
             data_x: num_bag x 3(c) x 224(h) x 224(w)
             data_y: num_bag x 80
         """
